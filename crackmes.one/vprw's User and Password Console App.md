@@ -6,17 +6,17 @@ Link: https://crackmes.one/crackme/68e54bb82d267f28f69b740f
 ### Tools used
 - Ghidra
 
-# String Analysis
+# Launching the executable
 <img width="1470" height="747" alt="image" src="https://github.com/user-attachments/assets/9258c1fa-0890-43f7-94fa-dc6f6d88ea23" />
-- The initial analysis reveals the following 2 strings: "Enter your name:" and "User not recognized:".
+- The program outputs these 2 strings: "Enter your name:" and "User not recognized:".
 
 <img width="1918" height="1018" alt="image" src="https://github.com/user-attachments/assets/8ce2a32d-1f3a-4a10-b629-39044b72144a" />
 
-- These strings can be used to find the starting point for binary analysis. Using ghidra's string search tool find the strings in the disassembler.
+- These strings can be used to find the starting point for our binary analysis. I used ghidra's string search tool to find the said strings in the disassembler.
 <img width="1876" height="802" alt="image" src="https://github.com/user-attachments/assets/e9d4e19c-cec2-4231-a0d7-16655415eff3" />
 
 # Binary Analysis
-- There are no COUT/CIN calls nearby and that our decompiler is empty. That is because this is the location where strings are stored, not used.
+- There are no COUT/CIN calls nearby and our decompiler is empty. That is because we are looking at a location where our strings are stored, not used.
 - I follow the XREFs, aka cross references, because they point to the location in the file where our strings are used.
 
 <img width="1076" height="367" alt="image" src="https://github.com/user-attachments/assets/30085496-8d73-4d0e-a0c9-76df5dac3bda" />
