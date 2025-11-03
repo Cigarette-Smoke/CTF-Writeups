@@ -21,13 +21,24 @@ Link: https://crackmes.one/crackme/68e54bb82d267f28f69b740f
 
 <img width="1076" height="367" alt="image" src="https://github.com/user-attachments/assets/30085496-8d73-4d0e-a0c9-76df5dac3bda" />
 
-- We can finally see the logic that matches the behaviour of the program that we've seen during the String Analysis, which means that we are moving in the correct direction.
+- I assume that bVar is the boolean result of strcmp(name, input) because it is used to control the flow between "Enter your name:" and "User not recognized".
 
-<img width="1215" height="757" alt="image" src="https://github.com/user-attachments/assets/97fcd029-d6c6-4226-8610-23d1da6a1a99" />
+<img width="663" height="360" alt="image" src="https://github.com/user-attachments/assets/36ef0458-390b-429e-b4eb-c8d45f71d3c5" />
 
-- The decompiler shows that bVar is in charge of the control flow.
+- In the disassembly window I can see a conditional jump ```JZ```, meaning the program jumps over the "User not recognized" section only if the strings are equal.
 
-<img width="877" height="337" alt="image" src="https://github.com/user-attachments/assets/77e5421a-85c2-4160-9839-86c6824f0237" />
 <img width="1590" height="362" alt="image" src="https://github.com/user-attachments/assets/588d000b-8492-4d51-9547-a80d552f0581" />
 
-- The disassembler shows that
+- Lets patch the instruction to change it to an unconditional jump, making the program always jump over the "User not recognized" section.
+
+<img width="884" height="156" alt="image" src="https://github.com/user-attachments/assets/08f54713-6ae5-443d-831c-cc30d397e694" />
+<img width="888" height="414" alt="image" src="https://github.com/user-attachments/assets/55fb7340-8932-40f9-ba4e-509556db8e43" />
+
+- Now we have to pass the password check, the code for password checking is the same, so we can repeat the same steps.
+
+<img width="872" height="214" alt="image" src="https://github.com/user-attachments/assets/e45c80ee-6ac3-4249-8c0d-2bf2e6544638" />
+<img width="892" height="192" alt="image" src="https://github.com/user-attachments/assets/5de05176-78bc-4b09-b82c-0ef2774d5370" />
+
+- Export the program and check see if it works
+<img width="1472" height="745" alt="image" src="https://github.com/user-attachments/assets/3100274e-4a99-416e-8bf4-bf5cc2df4df4" />
+
