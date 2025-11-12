@@ -24,7 +24,7 @@ Access the server using nc titan.picoctf.net XXXXX
 - Let's retrieve the password of this program by analysing its binary with a static analysis tool.
 
 ## Binary Analysis
-- The decompiler reveals a strcpy() function that copies a hardcoded string to a variable named "output". Its because that this variable contains the password because at line 37 that same variable is compared to our input.
+- The decompiler reveals a strcpy() function that copies a hardcoded string to a variable named "output". I could tell that this variable contains the password because I noticed that at line 37 that same variable is compared to our input.
 <img width="738" height="739" alt="image" src="https://github.com/user-attachments/assets/e84736b6-42da-4a2d-8637-fdf50574243e" />
 
 - Entering the hardcoded string into the server program won't print us the flag because at line 34 we can see that our input is decrypted through a cipher.
