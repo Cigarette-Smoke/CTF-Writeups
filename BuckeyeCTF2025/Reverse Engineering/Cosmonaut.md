@@ -31,9 +31,10 @@ Cosmonauts run their programs everywhere and all at once. Assemble all the flag 
 <img width="601" height="641" alt="image" src="https://github.com/user-attachments/assets/4e82ddbb-9ca1-4ba1-9f8d-675765011339" />
 
 - FreeBSD, Windows, Linux and an else case that only calls one function, whereas the rest call two. Logically, I can emulate FreeBSD and probably get the last piece of the flag, but I don't want to waste my precious time downloading massive ISO files. And what if the last case also prints a part of the flag?
+# Patching
 - I think it will be easier if I just remove all of the conditional jumps and let all of the cases execute in a single block.
 <img width="1526" height="769" alt="image" src="https://github.com/user-attachments/assets/5cc45a27-63bb-40d7-b3d0-06f2fc19cdf4" />
 <img width="1032" height="333" alt="image" src="https://github.com/user-attachments/assets/e8826359-d404-448b-a862-48ce5d060553" />
 
 - Tada! This is not rocket science, you don't have to be a genius to be a reverse engineer!
-- You just have to be a social inept freak with no life that will spend most of their time working reading 40 year old documentations about the internals of C/C++ and embedded systmes, in hopes of getting a job in a field that is in fact so niche that its job listings can be only found at the NSA or anti-malware development companies (How many of those do you know? OH YEAH LIKE FOUR?). Oh yeah and did I mention that said companies only hire best of the best like once half a decade and you have to SOMEHOW have at least one year of prior experience in this field to even try applying for an entry level position?
+- You just have to be a socially inept freak with no life, no hobbies that will spend most of their time working, reading massive 40-year-old documentations about the internals of C/C++ and embedded systems, in hopes of getting a job in a field that is in fact so niche that its job listings can only be found at the NSA or anti-malware development companies (how many of those do you know? OH YEAH LIKE FOUR?). Oh yeah, and did I mention that said companies only hire the best of the best like once half a decade, and you have to SOMEHOW have at least one year of prior experience in this field to even try applying for an entry-level position?
