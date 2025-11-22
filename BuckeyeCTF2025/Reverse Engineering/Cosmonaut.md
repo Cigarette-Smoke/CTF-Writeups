@@ -1,6 +1,8 @@
 Link: https://pwnoh.io/challenges
 # Cosmonaut
 Author: mbund
+
+Description:
 ```
 This is a good rev challenge to start with. Use the help button to ask for a hint if you get stuck.
 
