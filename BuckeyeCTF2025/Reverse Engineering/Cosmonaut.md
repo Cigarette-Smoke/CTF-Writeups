@@ -37,6 +37,3 @@ Cosmonauts run their programs everywhere and all at once. Assemble all the flag 
 - I think it will be easier if I just remove all of the conditional jumps and let all of the cases execute in a single block.
 <img width="1526" height="769" alt="image" src="https://github.com/user-attachments/assets/5cc45a27-63bb-40d7-b3d0-06f2fc19cdf4" />
 <img width="1032" height="333" alt="image" src="https://github.com/user-attachments/assets/e8826359-d404-448b-a862-48ce5d060553" />
-
-- Tada! This is not rocket science, you don't have to be a genius to be a reverse engineer!
-- You just have to be a socially inept freak with no life, no hobbies that will spend most of their time working, reading massive 40-year-old documentations about the internals of C/C++ and embedded systems, in hopes of getting a job in a field that is in fact so niche that its job listings can only be found at the NSA or anti-malware development companies (how many of those do you know? OH YEAH LIKE FOUR?). Oh yeah, and did I mention that said companies only hire the best of the best like once half a decade, and you have to SOMEHOW have at least one year of prior experience in this field to even try applying for an entry-level position?
